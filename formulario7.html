@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Formulario 7</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" <body>
+
+  <header>
+    <section id="header">
+      <div class="cabesa">
+
+        <a href="index.html" class="subrayado">
+          <h1>TRABAJOS</h1>
+        </a>
+      </div>
+      <nav>
+        <div class="nav">
+          <ul>
+            <li><a href="https://grupo3bg2023.wixsite.com/trabajo-3bg/post/estudio-del-color-marr%C3%B3n"
+                target="_blank">Pagina
+                marrón</a></li>
+            <li><a href="tablas.html">Tablas</a></li>
+            <li> <a href="estilos.html">Ejercicios de estilos</a></li>
+            <li> <a href="formularios.html">Formularios</a></li>
+            <li> <a href="animaciones.html">Transiciones en CSS</a></li>
+            <li><a href="desafios.html">Desafios</a></li>
+          </ul>
+        </div>
+        <hr>
+      </nav>
+    </section>
+  </header>
+  <main>
+    <section id="cuerpo">
+      <div class="divcuerpo">
+
+        <form>
+          <label for="nombre">Nombre Titular:</label><br>
+          <input type="text" id="nombre" name="nombre" maxlength="30"><br><br>
+
+          <label for="apellido">Apellido Titular:</label><br>
+          <input type="text" id="apellido" name="apellido" maxlength="30"><br><br>
+
+          <label for="telefono">Telefono de contacto:</label><br>
+          <input type="text" id="telefono" name="telefono" pattern="[0-9]{9}"><br><br>
+
+          <label for="marca">Marca:</label><br>
+          <input type="text" id="marca" name="marca" maxlength="12"><br><br>
+
+          <label for="modelo">Modelo:</label><br>
+          <input type="text" id="modelo" name="modelo" maxlength="12"><br><br>
+
+          <label for="año">Año:</label><br>
+          <input type="number" id="año" name="año"><br><br>
+
+          <label for="color">Color:</label><br>
+          <input list="colores" id="color" name="color"><br><br>
+          <datalist id="colores">
+            <option value="Rojo">
+            <option value="Verde">
+            <option value="Amarillo">
+            <option value="Azul">
+            <option value="Negro">
+          </datalist>
+
+          <label for="matricula">Matricula:</label><br>
+          <input type="text" id="matricula" name="matricula" pattern="[A-Z]{3}[0-9]{4}"><br><br>
+
+          <label for="ciudad">Ciudad:</label><br>
+          <input list="ciudades" id="ciudad" name="ciudad"><br><br>
+          <datalist id="ciudades">
+            <option value="Montevideo">
+            <option value="Las Piedras">
+            <option value="Maldonado">
+            <option value="Durazno">
+            <option value="Rocha">
+          </datalist>
+
+          <label for="fecha">Fecha de empadronamiento:</label><br>
+          <input type="date" id="fecha" name="fecha"><br><br>
+
+          <input type="submit" id="enviar">
+
+          <input type="reset" id="borrar">
+        </form>
+
+      </div>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+    <div class="pie">
+      <p>Hecho por Matías Franca de Lima</p>
+    </div>
+  </footer>
+  </body>
+
+</html>

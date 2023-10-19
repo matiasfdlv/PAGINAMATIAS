@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tablas</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" <body>
+
+  <header>
+    <section id="header">
+      <div class="cabesa">
+
+        <a href="index.html" class="subrayado">
+          <h1>TRABAJOS</h1>
+        </a>
+      </div>
+      <nav>
+        <div class="nav">
+          <ul>
+            <li><a href="https://grupo3bg2023.wixsite.com/trabajo-3bg/post/estudio-del-color-marr%C3%B3n"
+                target="_blank">Pagina
+                marrón</a></li>
+            <li><a href="tablas.html">Tablas</a></li>
+            <li> <a href="estilos.html">Ejercicios de estilos</a></li>
+            <li> <a href="formularios.html">Formularios</a></li>
+            <li> <a href="animaciones.html">Transiciones en CSS</a></li>
+            <li><a href="desafios.html">Desafios</a></li>
+          </ul>
+        </div>
+        <hr>
+      </nav>
+    </section>
+  </header>
+  <main>
+    <section id="cuerpo">
+      <div class="divcuerpo">
+
+        <h2>Tabla 1</h2>
+        <table>
+          <tr>
+            <td></td>
+            <td colspan="3"><img src="/img/mp3_pequeno_blanco.png"><img src="/img/mp3_pequeno_negro.png"><br>MP3 mini
+            </td>
+            <td colspan="2"><img src="/img/mp3_grande_blanco.png"><img src="/img/mp3_grande_negro.png"><br>MP3 grande
+            </td>
+          </tr>
+          <tr>
+            <td>Capacidad de<br>almacenamiento</td>
+            <td>4GB<br>(1.000<br>canciones)</td>
+            <td>8GB<br>(2.000<br>canciones)</td>
+            <td>16GB<br>(4.000<br>canciones)</td>
+            <td>30GB<br>(7.500 canciones)</td>
+            <td>80GB<br>(20.000 canciones)</td>
+          </tr>
+          <tr>
+            <td>Colores</td>
+            <td><img src="/img/color_blanco.png"></td>
+            <td><img src="/img/color_negro.png"><img src="/img/color_verde.png"><img src="/img/color_azul.png"><img
+                src="/img/color_rosa.png">
+            </td>
+            <td><img src="/img/color_negro.png"></td>
+            <td colspan="2"><img src="/img/color_blanco.png"><img src="/img/color_negro.png"></td>
+          </tr>
+          <tr>
+            <td>Pantalla</td>
+            <td colspan="3">LCD de 3 cm (diagonal) con retroiluminación)</td>
+            <td colspan="2">LCD de 6 cm (diagonal) con retroiluminación)</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Tiempo de carga</td>
+            <td colspan="3" rowspan="2">Unas 3 horas</td>
+            <td colspan="2">Unas 4 horas</td>
+          </tr>
+          <tr>
+            <td colspan="2">Unas 2 horas para alcanzar el 80% de la capacidad</td>
+          </tr>
+        </table>
+
+        <br><br>
+
+        <h2>Tabla 2</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Jugador</th>
+              <th>Posicion</th>
+              <th>Edad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lionel Messi</td>
+              <td>Delantero</td>
+              <td>34</td>
+            </tr>
+
+            <tr>
+              <td>Sergio Busquets</td>
+              <td>Centrocampista</td>
+              <td>33</td>
+            </tr>
+            <tr>
+              <td>Gerard Piqué</td>
+              <td>Defensa</td>
+              <td>34</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <TR>
+              <td colspan="3">Total de jugadores: 3</td>
+            </TR>
+          </tfoot>
+        </table>
+
+        <br><br>
+
+        <h2>Tabla 3</h2>
+
+        <table>
+          <tr>
+            <th>Tipo</th>
+            <th>Unidad</th>
+            <th>Valor</th>
+            <th>Caracteristica</th>
+          </tr>
+          <tr>
+            <td>Absoluta</td>
+            <td>PX</td>
+            <td>1px=0,26mm</td>
+            <td>-</td>
+          </tr>
+
+          <tr>
+            <td>Relativas</td>
+            <td>EM</td>
+            <td>1em=+-160PX</td>
+            <td>Fuente establecida en el navegador</td>
+          </tr>
+          <tr>
+            <td>-</td>
+            <td>EX</td>
+            <td>1/2EM</td>
+            <td>Fuente establecida en el navegador</td>
+          </tr>
+          <tr>
+            <td>-</td>
+            <td>CH</td>
+            <td>
+              <cerowidth>
+            </td>
+            <td>Tamaño del ancho 0</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>REM</td>
+            <td>(root:em)</td>
+            <td>Personalizado estilo
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>%</td>
+            <td>(heredable)</td>
+            <td>Relativo al elemento padre</td>
+          </tr>
+          <tr>
+            <td>VW</td>
+            <td>Viewport Width</td>
+            <td>1 VW 1% del ancho del navegador</td>
+            <td rowspan="5">Depende de la medida del dispositivo</td>
+          </tr>
+          <tr>
+            <td>VH</td>
+            <td>Viewport Height</td>
+            <td>1 VH 1% del alto del navegador</td>
+
+          </tr>
+          <tr>
+            <td>V min</td>
+            <td>Viewport Minimum</td>
+            <td>Establece el ancho alto minimo</td>
+
+          </tr>
+          <tr>
+            <td>V max</td>
+            <td>Viewport Maximum</td>
+            <td>Establece el ancho alto maximo</td>
+
+          </tr>
+          <tr>
+            <td>FR</td>
+            <td>Fraction</td>
+            <td>Establece 1 parte del navegador se utiliza para Grid</td>
+          </tr>
+
+        </table>
+
+        <br><br>
+
+        <h2>Tabla 4</h2>
+
+        <table>
+          <tr>
+            <th>Plato</th>
+            <th>Precio</th>
+          </tr>
+          <tr>
+            <td>Hamburguesa</td>
+            <td>$10.000</td>
+          </tr>
+
+          <tr>
+            <td>Pizza</td>
+            <td>$12.000</td>
+          </tr>
+          <tr>
+            <td>Ensalada</td>
+            <td>$8.000</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$30.000</td>
+          </tr>
+        </table>
+
+    </section>
+  </main>
+  <footer>
+    <div class="pie">
+      <p>Hecho por Matías Franca de Lima</p>
+    </div>
+  </footer>
+  </body>
+
+</html>

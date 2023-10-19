@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3.5rem;
+}
+
+.subrayado {
+  text-decoration: none;
+}
+
+.cabesa {
+  width: 100%;
+  height: 90px;
+  background-color: #254D3C;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #367D4B;
+  transition: all ease 0.3s;
+}
+
+
+
+hr {
+  text-align: left;
+  margin-left: 0;
+  background-color: black;
+}
+
+.divcuerpo {
+  width: 90%;
+  margin: auto;
+  background-color: #ededed;
+  max-height: 1500;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.articulos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.articulo1 {
+  width: 350px;
+  background-color: #ffff;
+  border: 1px solid #ececec;
+  margin: 20px;
+}
+
+.img1 {
+  width: 100%;
+  height: auto;
+}
+
+.img1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.texto1 {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.texto1 span {
+  color: #663127;
+  font-size: 0.9rem;
+}
+
+.texto1 .tituloart {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: black;
+}
+
+.texto1 .tituloart:hover {
+  color: #B34632;
+  transition: all ease 0.3s;
+
+}
+
+.pie {
+  width: 100%;
+  height: 90px;
+  background-color: #254D3C;
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.pie p {
+  color: white;
+  text-shadow: 1px 1px black;
+  margin: 4.2rem;
+}
+
+.in-flex p {
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#parrafo1 {
+  color: green;
+
+}
+
+#parrafo2 {
+  color: peru;
+
+}
+
+#parrafo3 {
+  color: purple;
+
+}
+
+#parrafo4 {
+  color: violet;
+
+}
+
+.in-flex {
+
+  background-color: lightgreen;
+
+  border-shadow: 7px 5px 8px teal;
+}

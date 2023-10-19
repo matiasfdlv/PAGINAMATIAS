@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Formulario 1, 2, 3, 4 y 5</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" <body>
+
+  <header>
+    <section id="header">
+      <div class="cabesa">
+
+        <a href="index.html" class="subrayado">
+          <h1>TRABAJOS</h1>
+        </a>
+      </div>
+      <nav>
+        <div class="nav">
+          <ul>
+            <li><a href="https://grupo3bg2023.wixsite.com/trabajo-3bg/post/estudio-del-color-marr%C3%B3n"
+                target="_blank">Pagina
+                marrón</a></li>
+            <li><a href="tablas.html">Tablas</a></li>
+            <li> <a href="estilos.html">Ejercicios de estilos</a></li>
+            <li> <a href="formularios.html">Formularios</a></li>
+            <li> <a href="animaciones.html">Transiciones en CSS</a></li>
+            <li><a href="desafios.html">Desafios</a></li>
+          </ul>
+        </div>
+        <hr>
+      </nav>
+    </section>
+  </header>
+  <main>
+    <section id="cuerpo">
+      <div class="divcuerpo">
+
+        <form action="/action_page.php" target="_blank" method="post">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre"><br><br>
+          <label for="correo">Correo electrónico:</label>
+          <input type="text" id="correo" name="correo"><br><br>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje"></textarea><br><br>
+          <input type="submit" id="enviar" name="Enviar">
+
+        </form>
+
+        <form action="/action_page.php" target="_blank" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre"><br>
+
+          <label for="apellidos">Apellidos</label>
+          <input type="text" id="apellidos" name="apellidos"><br>
+
+          <label for="sexo">Sexo:</label>
+          <input type="radio" id="hombre" name="sexo" value="hombre">
+          <label for="hombre">Hombre</label>
+          <input type="radio" id="mujer" name="sexo" value="mujer">
+          <label for="mujer">mujer</label><br>
+
+          <input type="checkbox" id="novedades" name="novedades">
+          <label for="novedades">Deseo recibir informacion sobre novedades y ofertas.</label><br>
+
+          <input type="checkbox" id="condiciones" name="condiciones">
+          <label for="condiciones">Declaro haber leído y aceptar las condiciones del proveedor.</label><br>
+
+          <input type="submit" id="enviar" name="Enviar">
+          <input type="reset" id="limpiar" name="Limpiar" value="Limpiar">
+        </form>
+
+        <form action="/action_page.php" target="_blank" method="post">
+          <label for="nombre">Ingrese nombre:</label><br>
+          <input type="text" id="nombre" name="nombre"><br>
+
+          <label for="sexo">Sexo:</label>
+          <input type="radio" id="hombre" value="hombre">
+          <label for="hombre">Hombre</label>
+
+          <input type="radio" id="mujer" value="mujer">
+          <label for="mujer">Mujer</label><br><br>
+
+          <label for="ciudad">Ciudad:</label>
+          <select name="transporte">
+            <option>Montevideo</option>
+            <option>Ciudad de las piedras</option>
+            <option>Chuy</option>
+            <option>Maldonado</option>
+          </select><br><br>
+          <input type="submit" id="enviar" name="Enviar">
+          <input type="reset" id="limpiar" name="Limpiar">
+        </form>
+
+        <fieldset>
+          <legend>Datos personales</legend>
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre"><br><br>
+          <label for="telefono">Teléfono:</label>
+          <input type="text" id="telefono" name="telefono"><br><br>
+          <label for="correo">Correo electrónico:</label>
+          <input type="text" id="correo" name="correo"><br><br>
+
+          <label for="pais">País:</label>
+          <select name="País">
+            <option>Uruguay</option>
+            <option>Perú</option>
+            <option>Bolivia</option>
+            <option>Argentina</option>
+          </select><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Intereses</legend>
+          <input type="checkbox" id="deportes" name="deportes">
+          <label for="deportes">Deportes</label><br>
+          <input type="checkbox" id="musica" name="musica">
+          <label for="musica">Música</label>
+        </fieldset>
+
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="apellido">Apellidos:</label>
+        <input type="text" id="apellido" name="apellido"><br><br>
+
+        <label for="sexo">Sexo:</label>
+        <input type="radio" id="hombre" value="hombre">
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="mujer" value="mujer">
+        <label for="mujer">Mujer</label><br><br>
+
+        <label for="correo">Correo:</label>
+        <input type="text" id="correo" name="correo"><br><br>
+
+        <label for="ciudad">Ciudad:</label>
+        <select name="transporte">
+          <option>Montevideo</option>
+          <option>Maldonado</option>
+          <option>San José</option>
+          <option>Maldonado</option>
+        </select>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="pie">
+      <p>Hecho por Matías Franca de Lima</p>
+    </div>
+  </footer>
+  </body>
+
+</html>
