@@ -26,7 +26,7 @@
                 target="_blank">Pagina
                 marrón</a></li>
             <li><a href="tablas.html">Tablas</a></li>
-            <li> <a href="estilos.html">Ejercicios de estilos</a></li>
+            <li> <a href="estilos.html">Ejercicios de prueba</a></li>
             <li> <a href="formularios.html">Formularios</a></li>
             <li> <a href="animaciones.html">Transiciones en CSS</a></li>
             <li><a href="desafios.html">Desafios</a></li>
@@ -40,109 +40,127 @@
     <section id="cuerpo">
       <div class="divcuerpo">
 
-        <form action="/action_page.php" target="_blank" method="post">
-          <label for="nombre">Nombre completo:</label>
-          <input type="text" id="nombre" name="nombre"><br><br>
-          <label for="correo">Correo electrónico:</label>
-          <input type="text" id="correo" name="correo"><br><br>
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje"></textarea><br><br>
+        <div class="formularioscustom1">
+          <form action="/action_page.php" target="_blank" method="post">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="correo">Correo electrónico:</label>
+            <input type="text" id="correo" name="correo"><br><br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea><br><br>
+            <input type="submit" id="enviar" name="Enviar">
+          </form>
+        </div>
+
+        <div class="formularioscustom2">
+          <form action="/action_page.php" target="_blank" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos"><br><br>
+
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="hombre" name="sexo" value="hombre">
+            <label for="hombre">Hombre</label>
+            <input type="radio" id="mujer" name="sexo" value="mujer">
+            <label for="mujer">mujer</label><br><br>
+
+            <input type="checkbox" id="novedades" name="novedades">
+            <label for="novedades">Deseo recibir informacion sobre novedades y ofertas.</label><br>
+
+            <input type="checkbox" id="condiciones" name="condiciones">
+            <label for="condiciones">Declaro haber leído y aceptar las condiciones del proveedor.</label><br><br>
+
+            <input type="submit" id="enviar" name="Enviar">
+            <input type="reset" id="limpiar" name="Limpiar" value="Limpiar">
+          </form>
+        </div>
+
+        <div class="formularioscustom3">
+          <form action="/action_page.php" target="_blank" method="post">
+            <label for="nombre">Ingrese nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="hombre" value="hombre">
+            <label for="hombre">Hombre</label>
+
+            <input type="radio" id="mujer" value="mujer">
+            <label for="mujer">Mujer</label><br><br>
+
+            <label for="ciudad">Ciudad:</label>
+            <select name="transporte">
+              <option>Montevideo</option>
+              <option>Ciudad de las piedras</option>
+              <option>Chuy</option>
+              <option>Maldonado</option>
+            </select><br><br>
+            <input type="submit" id="enviar" name="Enviar">
+            <input type="reset" id="limpiar" name="Limpiar">
+          </form>
+        </div>
+
+        <div class="formularioscustom4">
+          <fieldset>
+            <form>
+              <legend>Datos personales</legend>
+              <label for="nombre">Nombre completo:</label>
+              <input type="text" id="nombre" name="nombre"><br><br>
+              <label for="telefono">Teléfono:</label>
+              <input type="text" id="telefono" name="telefono"><br><br>
+              <label for="correo">Correo electrónico:</label>
+              <input type="text" id="correo" name="correo"><br><br>
+
+              <label for="pais">País:</label>
+              <select name="País">
+                <option>Uruguay</option>
+                <option>Perú</option>
+                <option>Bolivia</option>
+                <option>Argentina</option>
+              </select><br><br>
+          </fieldset>
+          <fieldset>
+            <legend>Intereses</legend>
+            <input type="checkbox" id="deportes" name="deportes">
+            <label for="deportes">Deportes</label><br>
+            <input type="checkbox" id="musica" name="musica">
+            <label for="musica">Música</label>
+          </fieldset>
+          <br>
           <input type="submit" id="enviar" name="Enviar">
+          </form>
+        </div>
+        <div class="formularioscustom5">
+          <form>
+            <fieldset>
+              <label for="nombre">Nombre completo:</label>
+              <input type="text" id="nombre" name="nombre"><br><br>
+              <label for="apellido">Apellidos:</label>
+              <input type="text" id="apellido" name="apellido"><br><br>
+            </fieldset>
+            <br>
+            <fieldset>
+              <label for="sexo">Sexo:</label>
+              <input type="radio" id="hombre" value="hombre">
+              <label for="hombre">Hombre</label>
+              <input type="radio" id="mujer" value="mujer">
+              <label for="mujer">Mujer</label><br><br>
+              <label for="correo">Correo:</label>
+              <input type="text" id="correo" name="correo"><br><br>
 
-        </form>
-
-        <form action="/action_page.php" target="_blank" method="post">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre"><br>
-
-          <label for="apellidos">Apellidos</label>
-          <input type="text" id="apellidos" name="apellidos"><br>
-
-          <label for="sexo">Sexo:</label>
-          <input type="radio" id="hombre" name="sexo" value="hombre">
-          <label for="hombre">Hombre</label>
-          <input type="radio" id="mujer" name="sexo" value="mujer">
-          <label for="mujer">mujer</label><br>
-
-          <input type="checkbox" id="novedades" name="novedades">
-          <label for="novedades">Deseo recibir informacion sobre novedades y ofertas.</label><br>
-
-          <input type="checkbox" id="condiciones" name="condiciones">
-          <label for="condiciones">Declaro haber leído y aceptar las condiciones del proveedor.</label><br>
-
-          <input type="submit" id="enviar" name="Enviar">
-          <input type="reset" id="limpiar" name="Limpiar" value="Limpiar">
-        </form>
-
-        <form action="/action_page.php" target="_blank" method="post">
-          <label for="nombre">Ingrese nombre:</label><br>
-          <input type="text" id="nombre" name="nombre"><br>
-
-          <label for="sexo">Sexo:</label>
-          <input type="radio" id="hombre" value="hombre">
-          <label for="hombre">Hombre</label>
-
-          <input type="radio" id="mujer" value="mujer">
-          <label for="mujer">Mujer</label><br><br>
-
-          <label for="ciudad">Ciudad:</label>
-          <select name="transporte">
-            <option>Montevideo</option>
-            <option>Ciudad de las piedras</option>
-            <option>Chuy</option>
-            <option>Maldonado</option>
-          </select><br><br>
-          <input type="submit" id="enviar" name="Enviar">
-          <input type="reset" id="limpiar" name="Limpiar">
-        </form>
-
-        <fieldset>
-          <legend>Datos personales</legend>
-          <label for="nombre">Nombre completo:</label>
-          <input type="text" id="nombre" name="nombre"><br><br>
-          <label for="telefono">Teléfono:</label>
-          <input type="text" id="telefono" name="telefono"><br><br>
-          <label for="correo">Correo electrónico:</label>
-          <input type="text" id="correo" name="correo"><br><br>
-
-          <label for="pais">País:</label>
-          <select name="País">
-            <option>Uruguay</option>
-            <option>Perú</option>
-            <option>Bolivia</option>
-            <option>Argentina</option>
-          </select><br><br>
-        </fieldset>
-
-        <fieldset>
-          <legend>Intereses</legend>
-          <input type="checkbox" id="deportes" name="deportes">
-          <label for="deportes">Deportes</label><br>
-          <input type="checkbox" id="musica" name="musica">
-          <label for="musica">Música</label>
-        </fieldset>
-
-        <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" name="nombre"><br><br>
-        <label for="apellido">Apellidos:</label>
-        <input type="text" id="apellido" name="apellido"><br><br>
-
-        <label for="sexo">Sexo:</label>
-        <input type="radio" id="hombre" value="hombre">
-        <label for="hombre">Hombre</label>
-        <input type="radio" id="mujer" value="mujer">
-        <label for="mujer">Mujer</label><br><br>
-
-        <label for="correo">Correo:</label>
-        <input type="text" id="correo" name="correo"><br><br>
-
-        <label for="ciudad">Ciudad:</label>
-        <select name="transporte">
-          <option>Montevideo</option>
-          <option>Maldonado</option>
-          <option>San José</option>
-          <option>Maldonado</option>
-        </select>
+              <label for="ciudad">Ciudad:</label>
+              <select name="transporte">
+                <option>Montevideo</option>
+                <option>Maldonado</option>
+                <option>San José</option>
+                <option>Maldonado</option>
+              </select>
+            </fieldset>
+            <br><br>
+            <input type="submit" id="enviar" name="Enviar">
+          </form>
+        </div>
       </div>
     </section>
   </main>

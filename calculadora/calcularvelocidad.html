@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Formulario 7</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+
+<body>
+  </head>
+  <header>
+    <section id="header">
+      <div class="cabesa">
+
+        <a href="../index.html" class="subrayado">
+          <h1>TRABAJOS</h1>
+        </a>
+      </div>
+      <nav>
+        <div class="nav">
+          <ul>
+            <li><a href="https://grupo3bg2023.wixsite.com/trabajo-3bg/post/estudio-del-color-marr%C3%B3n"
+                target="_blank">Pagina
+                marrón</a></li>
+            <li><a href="../tablas.html">Tablas</a></li>
+            <li> <a href="../estilos.html">Ejercicios de prueba</a></li>
+            <li> <a href="../formularios.html">Formularios</a></li>
+            <li> <a href="../animaciones.html">Transiciones en CSS</a></li>
+            <li><a href="../desafios.html">Desafios</a></li>
+          </ul>
+        </div>
+        <hr>
+      </nav>
+    </section>
+  </header>
+  <main>
+    <section id="cuerpo">
+      <div class="divcuerpo">
+            <div class="CAJA">
+              <h2>CALCULAR VELOCIDAD</h2>
+              <nav>
+                <div class="navegador">
+                <ul>
+                  <li><a href="calcularvelocidad.html">Calcular velocidad</a></li>
+                  <li><a href="calculariva.html">Calcular iva</a></li>
+                  <li><a href="calcularedad.html">Calcular edad</a></li>
+                </ul>
+                </div>
+              </nav>
+              <div class="Imagen">
+                <img src="VELOCIDAD.jpg">
+              </div>
+              <div class="Calculadora">
+                <form>
+                  <b>Distancia</b> <input type="text" id="distancia" name="distancia" value="" size="5" />
+                  <b>Tiempo</b> <input type="text" id="tiempo" name="tiempo" value="" size="5" /> <b>=</b><b> <span
+                      id="resultado"></span>
+                    <input onclick="dividir()" value="dividir" type="button" /></b>
+                </form>
+              </div>
+              <script>
+                function dividir() {
+                  var distancia = document.getElementById("distancia").value;
+                  var tiempo = document.getElementById("tiempo").value;
+                  var result = 0;
+                  result = distancia / tiempo;
+
+                  if (tiempo == 0) {
+                    document.getElementById("resultado").innerHTML = "No hubo tiempo";
+                  } else {
+                    document.getElementById("resultado").innerHTML = result;
+                  }
+
+                }
+              </script>
+                <a href="https://www.google.com" class="blur-out-expand">
+                  hola
+                </a>
+            </div>
+
+      </div>
+
+    
+    </section>
+  </main>
+  <footer>
+    <div class="pie">
+      <p>Hecho por Matías Franca de Lima</p>
+    </div>
+  </footer>
+</body>
+
+</html>

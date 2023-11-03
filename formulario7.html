@@ -26,7 +26,7 @@
                 target="_blank">Pagina
                 marrón</a></li>
             <li><a href="tablas.html">Tablas</a></li>
-            <li> <a href="estilos.html">Ejercicios de estilos</a></li>
+            <li> <a href="estilos.html">Ejercicios de prueba</a></li>
             <li> <a href="formularios.html">Formularios</a></li>
             <li> <a href="animaciones.html">Transiciones en CSS</a></li>
             <li><a href="desafios.html">Desafios</a></li>
@@ -39,57 +39,58 @@
   <main>
     <section id="cuerpo">
       <div class="divcuerpo">
+        <div class="formularioscustom7">
+          <div class="formularioscustom7-2" <form>
+            <label for="nombre">Nombre Titular:</label><br>
+            <input type="text" id="nombre" name="nombre" maxlength="30"><br><br>
 
-        <form>
-          <label for="nombre">Nombre Titular:</label><br>
-          <input type="text" id="nombre" name="nombre" maxlength="30"><br><br>
+            <label for="apellido">Apellido Titular:</label><br>
+            <input type="text" id="apellido" name="apellido" maxlength="30"><br><br>
 
-          <label for="apellido">Apellido Titular:</label><br>
-          <input type="text" id="apellido" name="apellido" maxlength="30"><br><br>
+            <label for="telefono">Telefono de contacto:</label><br>
+            <input type="text" id="telefono" name="telefono" pattern="[0-9]{9}"><br><br>
 
-          <label for="telefono">Telefono de contacto:</label><br>
-          <input type="text" id="telefono" name="telefono" pattern="[0-9]{9}"><br><br>
+            <label for="marca">Marca:</label><br>
+            <input type="text" id="marca" name="marca" maxlength="12"><br><br>
 
-          <label for="marca">Marca:</label><br>
-          <input type="text" id="marca" name="marca" maxlength="12"><br><br>
+            <label for="modelo">Modelo:</label><br>
+            <input type="text" id="modelo" name="modelo" maxlength="12"><br><br>
 
-          <label for="modelo">Modelo:</label><br>
-          <input type="text" id="modelo" name="modelo" maxlength="12"><br><br>
+            <label for="año">Año:</label><br>
+            <input type="number" id="año" name="año"><br><br>
 
-          <label for="año">Año:</label><br>
-          <input type="number" id="año" name="año"><br><br>
+            <label for="color">Color:</label><br>
+            <input list="colores" id="color" name="color"><br><br>
+            <datalist id="colores">
+              <option value="Rojo">
+              <option value="Verde">
+              <option value="Amarillo">
+              <option value="Azul">
+              <option value="Negro">
+            </datalist>
 
-          <label for="color">Color:</label><br>
-          <input list="colores" id="color" name="color"><br><br>
-          <datalist id="colores">
-            <option value="Rojo">
-            <option value="Verde">
-            <option value="Amarillo">
-            <option value="Azul">
-            <option value="Negro">
-          </datalist>
+            <label for="matricula">Matricula:</label><br>
+            <input type="text" id="matricula" name="matricula" pattern="[A-Z]{3}[0-9]{4}"><br><br>
 
-          <label for="matricula">Matricula:</label><br>
-          <input type="text" id="matricula" name="matricula" pattern="[A-Z]{3}[0-9]{4}"><br><br>
+            <label for="ciudad">Ciudad:</label><br>
+            <input list="ciudades" id="ciudad" name="ciudad"><br><br>
+            <datalist id="ciudades">
+              <option value="Montevideo">
+              <option value="Las Piedras">
+              <option value="Maldonado">
+              <option value="Durazno">
+              <option value="Rocha">
+            </datalist>
 
-          <label for="ciudad">Ciudad:</label><br>
-          <input list="ciudades" id="ciudad" name="ciudad"><br><br>
-          <datalist id="ciudades">
-            <option value="Montevideo">
-            <option value="Las Piedras">
-            <option value="Maldonado">
-            <option value="Durazno">
-            <option value="Rocha">
-          </datalist>
+            <label for="fecha">Fecha de empadronamiento:</label><br>
+            <input type="date" id="fecha" name="fecha"><br><br>
 
-          <label for="fecha">Fecha de empadronamiento:</label><br>
-          <input type="date" id="fecha" name="fecha"><br><br>
+            <input type="submit" id="enviar">
 
-          <input type="submit" id="enviar">
-
-          <input type="reset" id="borrar">
-        </form>
-
+            <input type="reset" id="borrar">
+            </form>
+          </div>
+        </div>
       </div>
       </div>
 

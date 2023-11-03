@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Formulario 7</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+
+<body>
+  </head>
+  <header>
+    <section id="header">
+      <div class="cabesa">
+
+        <a href="../index.html" class="subrayado">
+          <h1>TRABAJOS</h1>
+        </a>
+      </div>
+      <nav>
+        <div class="nav">
+          <ul>
+            <li><a href="https://grupo3bg2023.wixsite.com/trabajo-3bg/post/estudio-del-color-marr%C3%B3n"
+                target="_blank">Pagina
+                marrón</a></li>
+            <li><a href="../tablas.html">Tablas</a></li>
+            <li> <a href="../estilos.html">Ejercicios de prueba</a></li>
+            <li> <a href="../formularios.html">Formularios</a></li>
+            <li> <a href="../animaciones.html">Transiciones en CSS</a></li>
+            <li><a href="../desafios.html">Desafios</a></li>
+          </ul>
+        </div>
+        <hr>
+      </nav>
+    </section>
+  </header>
+  <main>
+    <section id="cuerpo">
+      <div class="divcuerpo">
+            <div class="CAJA">
+                  <h2>CALCULAR EDAD</h2>
+                  <nav>
+                    <div class="navegador">
+                      <ul>
+                        <li><a href="index.html">Calcular velocidad</a></li>
+                        <li><a href="calculariva.html">Calcular iva</a></li>
+                        <li><a href="calcularedad.html">Calcular edad</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                  <div class="Imagen3">
+                    <img src="EDAD.webp">
+                  </div>
+                  <div class="Calculadora">
+                    <form>
+                      <b>Tu edad:</b>
+                      <input type="text" id="Edad1" name="Edad" value="" size="5" />
+                      <b>=</b><b>
+                        <span id="Edad2"></span>
+                        <input onclick="Calculoedad()" value="Calcular" type="button" /></b>
+                    </form>
+                    <img id="imagen">
+                  </div>
+                  <script>
+                    function Calculoedad() {
+                      var edad = document.getElementById("Edad1").value;
+                      let text = document.getElementById("Edad2");
+
+                      switch (true) {
+
+                        case (edad > 0 && edad < 12):
+                          text.innerHTML = "eres Niño";
+                          document.getElementById("imagen").src = "BEBE.png";
+                          break;
+
+                        case (edad > 12 && edad < 21):
+                          text.innerHTML = "eres adolescente";
+                          document.getElementById("imagen").src = "Adolecente.png";
+                          break;
+
+                        case (edad > 21 && edad < 35):
+                          text.innerHTML = "eres adulto joven";
+                          document.getElementById("imagen").src = "Joven adulto.webp";
+                          break;
+
+                        case (edad > 34 && edad < 57):
+
+                          text.innerHTML = "eres adulto";
+                          document.getElementById("imagen").src = "Adulto.webp";
+                          break;
+
+                        case (edad > 56 && edad < 251):
+
+                          text.innerHTML = "eres viejo";
+                          document.getElementById("imagen").src = "Viejo.webp";
+                          break;
+
+                        default:
+                          text.innerHTML = "Que edad mas rara...(es posible que la hayas puesto mal,recuerda solo numeros de año)";
+                          document.getElementById("imagen").src = "EDAD_ERROR.gif";
+                          break;
+                      }
+
+                    }
+                  </script>
+            </div>
+
+      </div>
+
+
+    </section>
+  </main>
+  <footer>
+    <div class="pie">
+      <p>Hecho por Matías Franca de Lima</p>
+    </div>
+  </footer>
+</body>
+
+</html>
